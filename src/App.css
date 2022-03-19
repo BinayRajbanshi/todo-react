@@ -137,3 +137,36 @@
     transform: scale(1.5);
   }
   */
+
+  /* responsive todo list */
+  @media screen and (max-width:900px) {
+    header{
+      font-size: 1.3rem;
+    }
+    form{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }
+   .wrapper{
+     display: flex;
+     align-items: center;
+      justify-content: center;
+      min-width: 300px;
+   }
+    .select{
+      display: inline-flex;
+      align-items: center;
+      justify-content:center;
+    }
+    .select::after{
+      content: "";
+      display: none;
+    }
+    .todo{
+      font-size: 1rem;
+    }
+    .todo-list{
+      width: 80%;
+    }
+  }

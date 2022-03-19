@@ -20,13 +20,15 @@ export default function Form({setInputText , inputText, setTodos , todos , setSt
   }
   return (
       <form>
-          <input type="text" className='todo-input' 
-          value={inputText}
-          onChange={inputTextHandler}
-          />
-          <button onClick={submitTodoHandler} className='todo-button' type='submit' >
-          <i className='fas fa-plus-square'></i>
-          </button>
+          <div className="wrapper">
+            <input type="text" className='todo-input'
+            value={inputText}
+            onChange={inputTextHandler}
+            />
+            <button onClick={submitTodoHandler} className='todo-button' type='submit' >
+            <i className='fas fa-plus-square'></i>
+            </button>
+          </div>
           <div className='select' onChange={handleStatus}>
               <select name="todos" className='filter-todo'>
                 <option value="all">All</option>
